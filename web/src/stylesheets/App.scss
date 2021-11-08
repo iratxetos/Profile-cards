@@ -1,0 +1,150 @@
+@import '././core/reset.scss';
+@import '././core/variables.scss';
+
+/*******************************main*******************************/
+.card {
+  flex-grow: 1;
+  background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+}
+@media all and (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 40px 20px 20px;
+  }
+}
+
+
+.main {
+  box-sizing: border-box;
+  flex-grow: 1;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+.main__section1 {
+  width: 100%;
+  padding-top: 100px;
+}
+.main__section2 {
+  padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__section3 {
+  width: 100%;
+  max-width: 268px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: rgba(225, 115, 52, 0.2);
+  padding: 28px 18px;
+}
+.main__section4 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.section1__img {
+  width: 100%;
+  background-image: url("../images/tarjetas-molonas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+  max-width: 250px;
+  height: 63px;
+}
+
+.section2__title {
+  padding-top: 40px;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+  color: #e17334;
+  font-weight: 900;
+}
+
+.section2__text {
+  max-width: 300px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #114f4f;
+  text-align: center;
+  margin: 0 20px;
+  line-height: normal;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.list__item {
+  display: flex;
+  flex-direction: column;
+}
+.list__img {
+  color: #e17334;
+  font-size: 23px;
+}
+
+.section4__button {
+  background-color: #438792;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 129px;
+  height: 42px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.section4__nav {
+  color: #ffffff;
+}
+
+@media all and (min-width: 768px) {
+  .main__section1 {
+    padding-top: 250px;
+  }
+  .main__section3 {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  .section1__img {
+    background-image: url(../images/tarjetas-molonas@2x.png);
+    max-width: 419px;
+    height: 107px;
+  }
+  .section2__title {
+    font-size: 24px;
+  }
+  .section2__text {
+    font-size: 16px;
+  }
+  .section3 {
+    margin-top: 10px;
+  }
+  .list__item {
+    padding: 0 15px;
+  }
+  .list__img {
+    color: #e17334;
+    font-size: 28px;
+  }
+  .section4 {
+    margin-top: 180px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

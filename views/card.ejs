@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans:wght@400;600;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+      <link rel="stylesheet" type="text/css" href="/static/css/main.e4327edf.chunk.css"/>
+    <title>Esta es tu tarjeta</title>
+</head>
+<body>
+    
+        <section class="photo__container">
+
+           
+             <div
+                class="photo__card--container js-photo palette-<%=palette%>"
+            > 
+                <div class="photo__card--rectangle"
+                ></div>
+
+
+                <p class="photo__card--name"><%=name%> </p>
+                <p class="photo__card--frontend"><%=job%></p>
+               
+                <div class='photo__card--photo' id='photo' style=" background-image: url('<%=photo%>') "></div>
+                <div class="photo__card--rrss">
+                    <a href=<%=phone%> id="telLink" target="_blank" rel="noreferrer">
+                        <i class="fas fa-mobile-alt photo__card--rrss-icon"></i>
+                    </a>
+                    <a href=<%=email %> id="emailLink" target="_blank" rel="noreferrer">
+                        <i class="far fa-envelope photo__card--rrss-icon"></i>
+                    </a>
+                    <a href=<%=linkedin%> id="linkedinLink" target="_blank" rel="noreferrer">
+                        <i class="fab fa-linkedin-in photo__card--rrss-icon"></i>
+                    </a>
+                    <a href=<%=github%>  id="githubLink" target="_blank" rel="noreferrer">
+                        <i class="fab fa-github-alt photo__card--rrss-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+</body>
+</html>
